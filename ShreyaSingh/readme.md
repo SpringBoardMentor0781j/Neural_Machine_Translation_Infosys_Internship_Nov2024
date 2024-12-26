@@ -22,6 +22,6 @@ Before running the project, make sure you have the following installed:
    cd language-translation-marianmt
 ## Output
 ![Output Image](https://ibb.co/DgRwV1Q)
-![Output Image](https://ibb.co/D8Z9smX)
+[![image.png](https://i.postimg.cc/CM8CcNq6/image.png)](https://postimg.cc/Wt2J30SM)
 
 

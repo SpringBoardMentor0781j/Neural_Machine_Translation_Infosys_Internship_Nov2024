@@ -20,3 +20,8 @@ Before running the project, make sure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/language-translation-marianmt.git
    cd language-translation-marianmt
+## Output
+![Output Image](https://ibb.co/DgRwV1Q)
+![Output Image](https://ibb.co/D8Z9smX)
+
+

@@ -21,7 +21,7 @@ Before running the project, make sure you have the following installed:
    git clone https://github.com/yourusername/language-translation-marianmt.git
    cd language-translation-marianmt
 ## Output
-![Output Image](https://ibb.co/DgRwV1Q)
+[![image.png](https://i.postimg.cc/PfmHTgDb/image.png)](https://postimg.cc/9zFKBNJz)
 [![image.png](https://i.postimg.cc/CM8CcNq6/image.png)](https://postimg.cc/Wt2J30SM)
 
 

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import os
 from tensorflow.keras.models import load_model
 from sklearn.feature_extraction.text import CountVectorizer

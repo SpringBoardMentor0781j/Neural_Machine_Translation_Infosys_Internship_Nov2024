@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# DataFlair Project
-
 # Load all the required modules
 from tensorflow.keras.models import Model
 from tensorflow.keras import models

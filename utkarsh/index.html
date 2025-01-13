@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to French Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>English to French Translator</h1>
+    <form id="translation-form">
+        <textarea id="english_text" name="english_text" rows="4" placeholder="Enter English text..."></textarea>
+        <textarea id="french_translation" name="french_translation" rows="4" placeholder="French translation will appear here..." readonly></textarea>
+        <button type="button" onclick="translate()">Translate</button>
+    </form>
+
+    <script>
+        async function translate() {
+            const englishText = document.getElementById('english_text').value;
+            const response = await fetch('/translate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({ 'english_text': englishText })
+            });
+            const result = await response.json();
+            document.getElementById('french_translation').value = result.french_translation;
+        }
+    </script>
+</body>
+</html>
